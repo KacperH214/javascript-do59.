@@ -1,0 +1,30 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE> Hebe </TITLE> 
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:30px;">
+<script language="JavaScript">
+var liczba1=prompt("liczba1=","");
+var liczba2=prompt("liczba2=","");
+var x1_hebe=parseFloat(liczba1);
+var x2_hebe=parseFloat(liczba2);
+document.write("x1="+x1_hebe+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"x2="+x2_hebe+"<br>");
+var y1_hebe=3*Math.pow(x1_hebe,5/7);
+document.write("y1="+y1_hebe.toFixed(2)+"<br>");
+
+rad_x1_hebe=(x1_hebe*Math.PI)/180;
+var y2_hebe=2*Math.cos(rad_x1_hebe)+3*Math.sin(rad_x1_hebe);
+document.write("y2=" + y2_hebe.toFixed(2) + "<br>");
+</script>
+</div>
+</body>
+</html>
+</textarea> 
+</body> 
+</html>

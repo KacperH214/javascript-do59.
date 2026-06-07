@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Hebel Z40_JS</title> 
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var x = prompt("podaj argument x=", "");
+        var x_sie = parseFloat(x);
+        document.write("wykonał Kacper Hebel<br>");
+        document.write("czytany argument x=" + x_heb.toFixed(2) + "<br>");
+        function f_sie(x_heb) {
+            if (x_heb >= 2) { 
+                return 9; 
+            }
+
+            else if (x_heb >= 0 && x_heb < 2) { 
+                return Math.pow(x_heb, 3) + 1; 
+            }
+
+            else if (x_heb > -2 && x_heb < 0) { 
+                return Math.pow(x_heb + 1, 2); 
+            }
+
+            else { 
+                return 1; 
+            }
+        }
+
+        var wynik = f_heb(x_heb);
+        document.write("f(" + x_heb.toFixed(2) + ")=" + wynik.toFixed(2) + "<br>");
+    </script>
+</div>
+</body>
+</html>
+<!-- Hebel Z40_JS -->

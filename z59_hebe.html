@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 59 - Kacper Hebel</title>
+</head>
+<body>
+
+<script>
+    let r_heb = prompt("Podaj promień koła R:");
+    r_heb = parseInt(r_heb);
+
+    let n_heb = 0;
+
+    document.write("Punkty kratowe należące do koła K(0," + r_heb + "):<br><br>");
+
+    for (let x_heb = -r_heb; x_heb <= r_heb; x_heb++) {
+        for (let y_heb = -r_heb; y_heb <= r_heb; y_heb++) {
+
+            if (x_heb * x_heb + y_heb * y_heb <= r_heb * r_heb) {
+                document.write("(" + x_heb + ", " + y_heb + ")<br>");
+                n_heb++;
+            }
+
+        }
+    }
+
+    document.write("<br>Liczba punktów kratowych w kole wynosi: " + n_heb);
+</script>
+
+</body>
+</html>

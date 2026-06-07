@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 44</title>
+</head>
+<body>
+
+<script>
+    let liczba_liter_nazwiska_heb = 5;
+    let ile_razy_wyswietlic_heb = (liczba_liter_nazwiska_heb % 5) + 10;
+    let wielkosc_liter_heb = (liczba_liter_nazwiska_heb % 3) + 40;
+
+    document.write("ilość wykonania pętli = " + ile_razy_wyswietlic_heb + "<br>");
+    document.write("wielkość liter = " + wielkosc_liter_heb + "px<br><br>");
+
+    for (let k_h = 1; k_h <= ile_razy_wyswietlic_heb; k_h++) {
+        if (k_h % 2 == 1) {
+            document.write("<span style='font-size:" + wielkosc_liter_heb + "px;'>Hebel</span><br>");
+        } else {
+            document.write("<span style='font-size:" + wielkosc_liter_heb + "px;'>Kacper</span><br>");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 57 - Kacper Hebel</title>
+</head>
+<body>
+
+<script>
+    for (let k_heb = 15; k_heb <= 25; k_heb++) {
+        let pierw2_heb = Math.sqrt(k_heb);
+        let pierw4_heb = Math.sqrt(pierw2_heb);
+
+        document.write(
+            "i = " + k_heb +
+            "&nbsp;&nbsp;&nbsp; pierw_2(" + k_heb + ") = " + pierw2_heb.toFixed(2) +
+            "&nbsp;&nbsp;&nbsp; pierw_4(" + k_heb + ") = " + pierw4_heb.toFixed(2) +
+            "<br>"
+        );
+    }
+</script>
+
+</body>
+</html>

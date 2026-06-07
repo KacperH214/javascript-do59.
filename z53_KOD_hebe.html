@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 53 - Kacper Hebel</title>
+</head>
+<body>
+
+<script>
+    let a_heb = prompt("Podaj wysokość prostokąta:");
+    let b_heb = prompt("Podaj szerokość prostokąta:");
+
+    a_heb = parseInt(a_heb);
+    b_heb = parseInt(b_heb);
+
+    let wiersz_heb = "";
+
+    for (let k_heb = 1; k_heb <= b_heb; k_heb++) {
+        wiersz_heb = wiersz_heb + "*";
+    }
+
+    document.write(wiersz_heb + "<br>");
+
+    for (let k_heb = 1; k_heb <= a_heb - 2; k_heb++) {
+        document.write("*");
+
+        for (let j_heb = 1; j_heb <= b_heb - 2; j_heb++) {
+            document.write("&nbsp;&nbsp;");
+        }
+
+        document.write("*<br>");
+    }
+
+    document.write(wiersz_heb + "<br>");
+</script>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

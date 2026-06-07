@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 51 - Kacper Hebel</title>
+</head>
+<body>
+
+<script>
+    let ile_heb = prompt("Ile razy powtórzyć?");
+    ile_heb = parseInt(ile_heb);
+
+    let tekst_heb = prompt("Podaj tekst, np. swoje inicjały:");
+
+    for (let i_heb = 1; i_heb <= ile_heb; i_heb++) {
+        for (let j_heb = 1; j_heb <= i_heb; j_heb++) {
+            document.write("&nbsp;");
+        }
+
+        document.write(i_heb + "_" + tekst_heb + "_" + i_heb + "<br>");
+    }
+</script>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

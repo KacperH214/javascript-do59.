@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 46 - Kacper Hebel</title>
+</head>
+<body>
+
+<div style="color:red; font-size:50px;">
+<script>
+    let h_heb;
+    let a_heb;
+
+    do {
+        h_heb = prompt("Podaj wysokość trójkąta:");
+        h_heb = parseFloat(h_heb);
+    } while (h_heb <= 0);
+
+    do {
+        a_heb = prompt("Podaj podstawę trójkąta:");
+        a_heb = parseFloat(a_heb);
+    } while (a_heb <= 0);
+
+    let pole_heb = a_heb * h_heb / 2;
+
+    document.write("Pole = " + pole_heb.toFixed(2) + " cm^2");
+</script>
+</div>
+
+</body>
+</html>

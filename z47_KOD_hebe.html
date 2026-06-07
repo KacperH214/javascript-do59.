@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47 - Kacper Hebel</title>
+</head>
+<body>
+
+<script>
+    let a_heb;
+    let b_heb;
+    let c_heb;
+
+    do {
+        a_heb = prompt("Podaj bok a trójkąta:");
+        a_heb = parseFloat(a_heb);
+    } while (a_heb <= 0);
+
+    do {
+        b_heb = prompt("Podaj bok b trójkąta:");
+        b_heb = parseFloat(b_heb);
+    } while (b_heb <= 0);
+
+    do {
+        c_heb = prompt("Podaj bok c trójkąta:");
+        c_heb = parseFloat(c_heb);
+    } while (c_heb <= 0);
+
+    if (a_heb + b_heb > c_heb && a_heb + c_heb > b_heb && b_heb + c_heb > a_heb) {
+        document.write("Z podanych boków można zbudować trójkąt.");
+    } else {
+        document.write("Z podanych boków nie można zbudować trójkąta.");
+    }
+</script>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
